@@ -714,9 +714,13 @@ Explain why leadership should care and what immediate action is recommended.
 """
     try:
         response = model.generate_content(prompt)
+        st.write(response)
         return response.text.strip()
-    except Exception:
-        return (
+    except Exception as e:
+         import traceback
+         st.error(f"Gemini Error: {e}")
+         st.code(traceback.format_exc())
+         return(
             f"{cve_id} poses a {risk_level} business risk to {asset_name}. "
             f"The estimated financial exposure is ${exposure:,.0f}. "
             f"Immediate remediation is recommended to reduce operational and financial impact."
