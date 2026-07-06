@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ==============================
 # Python
 # ==============================
@@ -81,3 +82,34 @@ dist/
 !Outputs/risk_history.json
 !Outputs/summary.json
 !Outputs/technical_risk.json
+=======
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
+
+# Temporary files
+*.log
+
+# Python cache
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+>>>>>>> 80650853e939a7cf551bcedc4fff051ed4d15da8
