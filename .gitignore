@@ -1,0 +1,83 @@
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ==============================
+# Virtual Environments
+# ==============================
+venv/
+.venv/
+env/
+ENV/
+
+# ==============================
+# Environment Variables
+# ==============================
+.env
+.env.*
+
+# ==============================
+# IDEs
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Operating System Files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Streamlit Cache
+# ==============================
+.streamlit/
+
+# ==============================
+# Python Testing
+# ==============================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# Large Dataset (Don't Upload)
+# ==============================
+Data/
+
+# NVD feeds if downloaded separately
+*.zip
+*.gz
+
+# ==============================
+# Build Files
+# ==============================
+build/
+dist/
+*.egg-info/
+
+# ==============================
+# Keep generated project outputs
+# (These are useful for demo)
+# ==============================
+!Outputs/
+!Outputs/contextual_risk.json
+!Outputs/final_risk.json
+!Outputs/risk_history.json
+!Outputs/summary.json
+!Outputs/technical_risk.json
