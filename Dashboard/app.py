@@ -24,7 +24,10 @@ from streamlit_autorefresh import st_autorefresh
 # Load environment variables
 # -------------------------------
 load_dotenv()  # reads .env file
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = st.secrets.get(
+    "GEMINI_API_KEY",
+    os.getenv("GEMINI_API_KEY")
+)
 
 # =====================================
 # SENTRA PAGE CONFIG
